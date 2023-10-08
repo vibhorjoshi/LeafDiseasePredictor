@@ -1,0 +1,67 @@
+.card-container {
+    display: flex;
+    flex-direction: column;
+    height: 380px;
+    width: 300px;
+    padding: 10px;
+    background: white;
+    /* border: 2px solid var(--color_4); */
+    box-shadow: 7px 7px 12px rgba(0, 0, 0, 0.05);
+    align-items: center;
+    justify-content: space-around;
+    border-radius: 5px;
+}
+.card-container .image-container {
+    display: flex;
+    justify-content: center;
+}
+.card-container img {
+    height: 180px;
+    width: 280px;
+    object-fit: cover;
+    border-radius: 5px;
+}
+
+.details-container {
+    display: flex;
+    width: 100%;
+    gap: 5px;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.sub-detail {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+.details-container .sub-heading {
+    color: var(--color_4);
+    font-family: "Dosis", cursive;
+    letter-spacing: 1px;
+}
+
+/* .details-container .sub-content {
+    color: var(--color_4);
+    font-family: "Dosis", cursive;
+} */
+
+.details-container button {
+    width: 50%;
+    font-size: 13px;
+    letter-spacing: 1px;
+    font-weight: 500;
+    background-color: var(--color_4);
+    color: white;
+    padding: 2px 0px;
+    border: none;
+    transition: 0.15s ease;
+    cursor: pointer;
+}
+
+.details-container button:hover {
+    color: var(--color_4);
+    background-color: white;
+    padding: 1px 0;
+    border: 1px solid var(--color_4);
+}
