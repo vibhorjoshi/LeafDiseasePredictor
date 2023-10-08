@@ -1,0 +1,20 @@
+.about-container {
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    padding-left: 7rem;
+    padding-right: 7rem;
+    flex-direction: column;
+    justify-content: center;
+    gap:30px;
+  }
+
+  .profile-heading{
+    font-size: 35px;
+    color: var(--color_4);
+    letter-spacing: 2px;
+  }
+  .profile-cards{
+    display: flex;
+    gap:30px;
+  }
