@@ -1,0 +1,14 @@
+.container {
+  background-color: var(--color_1);
+  min-height: 100vh;
+  width: 100%;
+}
+
+.noti-container {
+  height: 100vh;
+  width: 100vw;
+  position: fixed;
+  top:0;
+  left:0;
+  z-index: 30;
+}
