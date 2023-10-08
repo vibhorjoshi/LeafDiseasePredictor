@@ -1,0 +1,37 @@
+.market-mega-container{
+    /* background-image: url("https://static.sadhguru.org/d/46272/1633185367-1633185366613.jpg"); */
+    background-size: cover;
+}
+
+.market-container {
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    padding-left:7rem;
+    padding-right:7rem;
+    justify-content: space-between;
+  }
+  
+
+
+.cards-container{
+    min-height: 65vh;
+    display: flex;
+    margin-top:11%;
+    gap:60px;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    padding:20px;
+    /* border: 1px solid green; */
+    width:100%;
+}
+
+.productInputToggle{
+    position: fixed;
+    bottom:3%;
+    z-index: 10;
+    right:3%;
+    color:var(--color_4);
+    cursor: pointer;
+    font-size: 40px;
+}
