@@ -1,0 +1,195 @@
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+
+/* Firefox */
+input[type="number"] {
+    -moz-appearance: textfield;
+}
+.cargo-modal-container {
+    position: fixed;
+    box-shadow: 7px 7px 12px rgba(0, 0, 0, 0.05);
+    background-color: white;
+    border-radius: 4px;
+    top: 50%;
+    left: 50%;
+    transform: translateX(-50%) translateY(-50%);
+    border: 2px var(--color_4) solid;
+    z-index: 20;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    animation: fadeInCargo 0.9s ease forwards;
+}
+
+@keyframes fadeInCargo {
+    0% {
+        height: 0;
+        width: 0;
+        opacity: 0;
+    }
+    50% {
+        opacity: 0.3;
+        width: 10%;
+        height: 80%;
+    }
+    100% {
+        height: 85%;
+        width: 50%;
+        opacity: 1;
+    }
+}
+
+.close-button {
+    position: absolute;
+    top: 10px;
+    right: 20px;
+    z-index: 10;
+    color: white;
+    font-size: 20px;
+    cursor: pointer;
+}
+
+@keyframes fadeInChildren {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+
+.cargo-input-container {
+    flex: 1;
+    height: 100%;
+    width:100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image: url("../../../public/images/photo-1520018627052-cade17c11af8.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    color: white;
+    /* background-color: var(--color_6); */
+    /* border-left:2px solid var(--color_4); */
+}
+.cargo-input-container .input-form {
+    backdrop-filter: blur(10px);
+    height: max-content;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 10px;
+    width: 50%;
+    padding:10px;
+    box-shadow: 7px 7px 12px rgba(0, 0, 0, 0.65);
+    /* border:2px solid white; */
+    flex-wrap: wrap;
+}
+.cargo-input-container .input-area {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    font-size: 20px;
+    letter-spacing: 1px;
+}
+.cargo-input-container .input-area input {
+    padding: 2px 5px;
+    font-size: 16px;
+    min-width:300px;
+    height:35px;
+    border-radius: 5px;
+    border: none;
+}
+.cargo-input-container .input-area input:focus {
+    outline: none !important;
+    border: 2px solid var(--color_4);
+    border-radius: 3px;
+}
+.cargo-image-input .image-upload-button {
+    width: 100px;
+    text-align: center;
+    cursor: pointer;
+    font-size: 16px;
+    letter-spacing: 1px;
+    border-radius: 5px;
+    font-weight: 500;
+    background-color: var(--color_1);
+    /* border: 1px solid white; */
+    color: black;
+    padding: 2px 0px;
+    border: none;
+    transition: 0.15s ease;
+}
+
+.bottom-bar {
+    height: 8%;
+    display: none;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    /* z-index: 5; */
+    background-color: var(--color_4);
+}
+.form-btn {
+    /* position: absolute; */
+    margin-top: 10px;
+    bottom: 10px;
+    z-index: 100;
+    right: 45%;
+    background-color: white;
+    border: none;
+    padding: 2px 15px;
+    font-size: 17px;
+    color: var(--color_4);
+    cursor: pointer;
+    border-radius: 5px;
+    transition: 0.2s ease;
+}
+.form-btn:hover {
+    background-color: var(--color_4);
+    border: 1px solid white;
+    color: white;
+}
+
+.product-date{
+    margin-left: -10px;
+    /* background-color: white; */
+    border-radius: 5px;
+}
+.react-date-picker,
+.react-date-picker *,
+.react-date-picker *:before,
+.react-date-picker *:after {
+    box-sizing: border-box;
+    background-color: white;
+    color:var(--color_4);
+    border-radius: 5px;
+}
+.react-date-picker{
+    width:200px !important;
+}
+
+.cargo-date{
+    display: flex;
+    flex-direction: column;
+}
+
+.react-date-picker__inputGroup__month,.react-date-picker__inputGroup__day{
+    width:29px !important;
+}
+
+.react-date-picker__inputGroup__year{
+    width:48px !important;
+}
+.react-date-picker__inputGroup__leadingZero{
+    display: none !important;
+}
+.react-date-picker__inputGroup__divider{
+    display: none !important;
+}
